@@ -1,20 +1,13 @@
 
-$('#enviar').click(function( event ){
+$('#formulario').submit(function( event ){
 	event.preventDefault();
-	var datosRecibidos = $('#formulario').serialize();
+	var datosRecibidos = $(this).serialize();
 	//alert('Enviastes ' + datosRecibidos);
-	$.post("http://localhost/cancun/controllers/obtener.php", $('#formulario').serialize(), function(data, status){
+	$.post("http://localhost/cancun/controllers/obtener.php", $('#formulario').serialize(), function(data){
         //alert("Data: " + data + "\nStatus: " + status);
-        obtenerDatos();
+        alert(data.status);
+        alert(data.msg);
     });
-
-	function obtenerDatos(){
-		$.getJSON("controllers/obtener.php",function( data ){
-		console.log("success");
-		console.log(data);
-		//var json = JSON.parse(data);
-	});
-}//end function
 	
 });
 

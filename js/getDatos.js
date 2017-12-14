@@ -5,8 +5,11 @@ $('#formulario').submit(function( event ){
 	//alert('Enviastes ' + datosRecibidos);
 	$.post("http://localhost/cancun/controllers/obtener.php", $('#formulario').serialize(), function(data){
         //alert("Data: " + data + "\nStatus: " + status);
-        alert(data.status);
-        alert(data.msg);
+        //alert(data.status);
+        //alert(data.msg);
+        console.log(data);
+        var respuesta = data.msg;
+        console.log(respuesta);
     });
 	
 });

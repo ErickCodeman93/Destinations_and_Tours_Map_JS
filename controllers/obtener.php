@@ -16,15 +16,15 @@ else
 switch ($_POST['ruinas']) {
 	case 'chichenItza':
 		//echo "Debes visitar ".$ruinas;
-		$chichenItza = '20.6839544,-88.5683359';
+		$chichenItza = array(20.6839544,-88.5683359);
 		$answer = ['status' => 'success','msg' => $chichenItza];
-		echo json_encode($answer, JSON_FORCE_OBJECT);
+		echo (json_encode($answer));
 		//json_encode($chichenItza);
 		break;
 
 	case 'tulum':
 		//echo "Debes visitar ".$ruinas;
-		$tulum = array(20.6839544,-88.5683359);
+		$tulum = array(20.1980259,-87.5024813);
 		$answer = ['status' => 'success','msg' => $tulum];
 		echo(json_encode($answer));
 		//json_encode($tulum);
@@ -32,7 +32,7 @@ switch ($_POST['ruinas']) {
 
 	case 'coba':
 		//echo "Debes visitar ".$ruinas;
-		$coba = array(20.6839544,-88.5683359);
+		$coba = array(20.4913354,-87.7263204);
 		$answer = ['status' => 'success','msg' => $coba];
 		echo(json_encode($answer));
 		//json_encode($tulum);
@@ -40,7 +40,7 @@ switch ($_POST['ruinas']) {
 
 	case 'xcaret':
 		//echo "Debes visitar ".$ruinas;
-		$tulum = array(20.6839544,-88.5683359);
+		$tulum = array(20.5791102,-87.1216336);
 		$answer = ['status' => 'success','msg' => $tulum];
 		echo(json_encode($answer));
 		//json_encode($tulum);
@@ -48,7 +48,7 @@ switch ($_POST['ruinas']) {
 
 	case 'xelHa':
 		//echo "Debes visitar ".$ruinas;
-		$xelHa = array(20.6839544,-88.5683359);
+		$xelHa = array(20.2878963,-87.5192117);
 		$answer = ['status' => 'success','msg' => $xelHa];
 		echo(json_encode($answer));
 		//json_encode($xelHa);
@@ -56,12 +56,17 @@ switch ($_POST['ruinas']) {
 
 	case 'kabah':
 		//echo "Debes visitar ".$ruinas;
-		$kabah = array(20.6839544,-88.5683359);
+		$kabah = array(20.2466419,-89.6500092);
 		$answer = ['status' => 'success','msg' => $kabah];
 		echo(json_encode($answer));
-		//json_encode($kabah);
 		break;
 
+	case 'Kohunlinch':
+		//echo "Debes visitar ".$ruinas;
+		$Kohunlinch = array(18.4196699,-88.7914671);
+		$answer = ['status' => 'success','msg' => $Kohunlinch];
+		echo(json_encode($answer));
+		break;
 
 	default:
 		echo "no te gusta viajar??";

@@ -6,7 +6,7 @@
 			#map {
 				background: gray;
 				height: 700px;
-				width: 30%;
+				width: 60%;
 			}
 	</style>
 	<script
@@ -23,7 +23,7 @@
 		<option value="coba">Coba</option>
 		<option value="xcaret">Xcaret</option>
 		<option value="xelHa">Xel-ha</option>
-		<option value="kohunlinch">Kohunlinch</option>
+		<option value="Kohunlinch">Kohunlinch</option>
 		<option value="kabah">Kabah</option>					
 	</select>
 	<br><br>
@@ -33,8 +33,8 @@
 <div id="map"></div>
 	<!--api key: AIzaSyCMl0jiEqE38hY86ouhcGvzdFTCDcMGibg-->
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMl0jiEqE38hY86ouhcGvzdFTCDcMGibg"></script>
-	<script src="js/main.js"></script>
-	<script src="js/getDatos.js"></script>
+	<script src="js/mapa.js"></script>
+	<!-- <script src="js/getDatos.js"></script> -->
 
 </body>
 </html>
